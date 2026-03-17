@@ -11,12 +11,12 @@ const heading = Oswald({
 const body = Sora({ 
   subsets: ['latin'], 
   variable: '--font-body',
-  weight: ['300', '400', '600', '800']
+  weight: ['300', '400', '600', '800'] 
 });
 
 export const metadata: Metadata = {
-  title: 'Aderaf Entertainment Ventures | Artisan Cakes & Gourmet Snacks',
-  description: 'Artisanally crafted cakes and gourmet snacks, baked fresh daily to elevate your celebrations in Lagos and beyond.',
+  title: 'Aderaf Entertainment Ventures | Artisan Bakery Lagos',
+  description: 'Artisan bakery specializing in bespoke cakes, gourmet pastries, and premium savory snacks in Lagos.',
 };
 
 export default function RootLayout({
@@ -26,15 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body 
-        className={`${heading.variable} ${body.variable} font-sans antialiased bg-[#FF6B6B] text-white`}
-        style={{
-          // @ts-ignore
-          '--primary': '#FF6B6B',
-          '--secondary': '#FFE66D',
-          '--accent': '#4ECDC4',
-        }}
-      >
+      <body className={`${heading.variable} ${body.variable} font-sans bg-[#FF5733] text-white antialiased`}>
         {children}
       </body>
     </html>
