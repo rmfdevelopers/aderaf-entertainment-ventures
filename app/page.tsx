@@ -524,5 +524,3 @@ export default function Website() {
     </main>
   );
 }
-
-// ===== END OF FILE: app/page.tsx =====
