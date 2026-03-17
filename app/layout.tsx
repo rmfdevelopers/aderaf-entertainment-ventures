@@ -1,31 +1,18 @@
-import type { Metadata } from "next";
-import { Oswald, Sora } from "next/font/google";
-import "./globals.css";
+import { Oswald, Sora } from 'next/font/google';
+import './globals.css';
 
-const headingFont = Oswald({ 
-  subsets: ["latin"], 
-  weight: ["400", "700"],
-  variable: "--font-heading" 
-});
+const heading = Oswald({ subsets: ['latin'], variable: '--font-heading', weight: ['400', '700'] });
+const body = Sora({ subsets: ['latin'], variable: '--font-body', weight: ['300', '400', '600', '800'] });
 
-const bodyFont = Sora({ 
-  subsets: ["latin"],
-  variable: "--font-body" 
-});
-
-export const metadata: Metadata = {
-  title: "Aderaf Entertainment Ventures",
-  description: "Artisanal cakes and delightful snacks crafted with local flair in Lagos.",
+export const metadata = {
+  title: 'Aderaf Entertainment Ventures | Artisan Bakery Lagos',
+  description: 'Artisan bakery specializing in bespoke cakes and premium snacks for every celebration across Lagos.',
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={`${headingFont.variable} ${bodyFont.variable} font-sans antialiased`}>
+      <body className={`${heading.variable} ${body.variable} font-sans`}>
         {children}
       </body>
     </html>
