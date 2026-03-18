@@ -4,8 +4,8 @@
 
 :root {
   --primary: #FF5733;
-  --secondary: #33FF57;
-  --accent: #FFC300;
+  --secondary: #FFC300;
+  --accent: #33FF57;
 }
 
 html { scroll-behavior: smooth; }
@@ -15,7 +15,7 @@ body {
   background: var(--primary); 
   color: white; 
 }
-h1,h2,h3,h4 { font-family: var(--font-heading); text-transform: uppercase; }
+h1, h2, h3, h4 { font-family: var(--font-heading); }
 
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 @keyframes slideUp { from { opacity: 0; transform: translateY(40px); } to { opacity: 1; transform: translateY(0); } }
@@ -27,8 +27,7 @@ h1,h2,h3,h4 { font-family: var(--font-heading); text-transform: uppercase; }
 .animate-slideUp { animation: slideUp 0.8s ease-out forwards; }
 .animate-scaleIn { animation: scaleIn 0.5s ease-out forwards; }
 .animate-float { animation: float 6s ease-in-out infinite; }
-.animate-slide-left { animation: slide-left 35s linear infinite; }
-
+.animate-slide-left { animation: slide-left 40s linear infinite; }
 .line-clamp-2 { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
 .scrollbar-hide::-webkit-scrollbar { display: none; }
